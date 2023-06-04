@@ -1,6 +1,10 @@
 .App {
   text-align: center;
 }
+.movie-details .portada {
+  max-width: 200px; /* Ajusta el valor según el tamaño deseado */
+  max-height: 300px; /* Ajusta el valor según el tamaño deseado */
+}
 
 .App-logo {
   height: 40vmin;
@@ -36,3 +40,5 @@
     transform: rotate(360deg);
   }
 }
+
+  

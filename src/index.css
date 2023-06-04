@@ -11,3 +11,304 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.movie-details .portada {
+  max-width: 1200px; /* Ajusta el valor según el tamaño deseado */
+  max-height: 300px; /* Ajusta el valor según el tamaño deseado */
+}
+
+.movie-list-container {
+  padding: 20px;
+}
+
+.movie-list-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.movie-details {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.portada {
+  width: 200px;
+  height: auto;
+  border-radius: 8px;
+}
+
+.movie-details-content {
+  margin-left: 20px;
+}
+
+.movie-details-title {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.movie-details-runtime {
+  margin-top: 8px;
+}
+
+.movie-details-overview {
+  margin-top: 16px;
+}
+
+.movie-details-button {
+  margin-top: 16px;
+  padding: 8px 16px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.recommendations-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.recommendations-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.recommendation {
+  margin-top: 8px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.movie-card {
+  display: inline-block;
+  width: 200px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.movie-card-poster {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  transition: transform 0.3s;
+}
+
+.movie-card-poster:hover {
+  transform: scale(1.1);
+}
+
+.movie-card-title {
+  font-size: 16px;
+  margin-top: 8px;
+}
+
+.movie-card-runtime {
+  margin-top: 4px;
+}
+
+.movie-card-button {
+  margin-top: 8px;
+  padding: 4px 8px;
+  background-color: #e50914;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Estilos para el contenedor principal */
+.movie-list-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #000;
+}
+
+/* Estilos para letras claras */
+.movie-list-container {
+  color: #fff; /* Color de letra blanco */
+}
+
+.movie-card h2,
+.movie-card p,
+.movie-details h2,
+.movie-details p {
+  color: #fff; /* Color de letra blanco */
+}
+
+.movie-details button {
+  color: #fff; /* Color de letra blanco */
+  background-color: #e50914; /* Color de fondo rojo oscuro */
+}
+
+.movie-list-container {
+  max-width: 1000;
+  align-self:
+   center;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.movie-list-title {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.movie-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.portada {
+  width: 200px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.movie-details-content {
+  text-align: center;
+}
+
+.movie-details-title {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.movie-details-runtime,
+.movie-details-overview {
+  margin-bottom: 10px;
+}
+
+.movie-details-button {
+  padding: 10px 20px;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.recommendations {
+  margin-top: 20px;
+}
+
+.recommendations-title {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.recommendations-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.recommendation {
+  width: 120px;
+  text-align: center;
+  margin: 10px;
+}
+
+.recommendation-poster {
+  width: 100px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.recommendation-title {
+  font-size: 14px;
+}
+
+.movie-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 20px;
+}
+
+.movie-card {
+  text-align: center;
+}
+
+.movie-card-poster {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.movie-card-title {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.movie-card-runtime {
+  margin-bottom: 10px;
+}
+
+.movie-card-button {
+  padding: 10px 20px;
+  background-color: #d13030;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .movie-details {
+    margin-bottom: 40px;
+  }
+
+  .portada {
+    width: 150px;
+  }
+
+  .recommendations-list {
+    justify-content: flex-start;
+  }
+
+  .recommendation {
+    width: 100px;
+    margin: 10px 5px;
+  }
+
+  .recommendation-poster {
+    width: 80px;
+  }
+
+  .recommendation-title {
+    font-size: 12px;
+  }
+
+  .movie-list {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-gap: 10px;
+  }
+
+  .movie-card-poster {
+    width: 100%;
+    height: auto;
+    margin-bottom: 5px;
+  }
+
+  .movie-card-title {
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+
+  .movie-card-runtime {
+    margin-bottom: 5px;
+  }
+}
+.movie-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1px;
+}
